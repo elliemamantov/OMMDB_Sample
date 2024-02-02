@@ -1,5 +1,5 @@
 # OMMDB Sample Code
-(Incomplete) Data processing pipeline and modeling code for the OMMDB project. \
+(***Incomplete!!***) Data processing pipeline and modeling code for the OMMDB project. \
 Authors: Ellie Mamantov and Kayla Matheus
 
 # Data Processing Pipeline
