@@ -91,7 +91,7 @@ Custom dataset definitions to handle the OMMDB custom dataset\
 
 ## models.py
 
-Definitions of all models tested for the project. 
+Definitions of all models tested for the project. \
 	- *Full Model Both*: The entire model, including the chosen CNN, the IMU MLP, body motors input, and LSTM. Both refers to both types of motion input (IMU and Body motors) being included. This is the final model evaluated in the paper\
 	- *Full Model No Motion*: The entire model, but with neither the IMU MLP or the body motors input. Therefore, it solely includes the chosen CNN and LSTM\
 	- *Full Model Body Motion*: The entire model, but with only the body motors input. Therefore, it includes the chosen CNN, the body motors input, and the LSTM\
