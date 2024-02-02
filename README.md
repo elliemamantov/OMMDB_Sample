@@ -56,7 +56,7 @@ Preprocess the RGB camera input to create optical flow images using OpenCV's imp
 
 **Input**: Image files \
 **Output**: Optical flow data for each session specified \
-**Arguments**:
+**Arguments**:\
 	 - *folders*: session folders you want to process\
 	 - *omit*: any folders you want to omit from this processing\
 	 - *root*: root file path to the session folders are located\
@@ -85,10 +85,9 @@ Also includes tensorboard logging and results tracking, including accuracy, F1 s
 
 ## dataset.py
 
-Custom dataset definitions to handle the OMMDB custom dataset
-
-- *VideoIndex_Stacked*: An indexing system to link an optical flow frame to an index. \
-- *OF_Dataset_sequenced_sliding*: The dataset class definition that utilizes a sliding window approach to extract datapoints from the data stream. 
+Custom dataset definitions to handle the OMMDB custom dataset\
+	- *VideoIndex_Stacked*: An indexing system to link an optical flow frame to an index. \
+	- *OF_Dataset_sequenced_sliding*: The dataset class definition that utilizes a sliding window approach to extract datapoints from the data stream. 
 
 ## models.py
 
