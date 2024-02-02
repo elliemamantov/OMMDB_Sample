@@ -2,7 +2,7 @@
 (Incomplete) Data processing pipeline and modeling code for the OMMDB project. 
 Authors: Ellie Mamantov and Kayla Matheus
 
-# Data Processing Pipeling
+# Data Processing Pipeline
 Processes radar, RGB Camera, respiration belt, motors, and IMU data
 
 ## bagpy_processing.py
