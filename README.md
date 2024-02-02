@@ -13,7 +13,7 @@ Initial processing of raw bag files
 **Arguments:** \
 		-*root*: root file path for the bag files\
 		- *bagFiles*: bag file names\
-		- *omit*: any bag files to remove from processing\
+		- *omit*: any bag files to remove from processing
 
 ## filter_respiration.py
 Prepare the respiration belt data for labeling. After filtering, please label the data in label-studio and export labels in the JSON_MIN format
@@ -25,7 +25,7 @@ Prepare the respiration belt data for labeling. After filtering, please label th
 		- *sigma*: the level of smoothing for the gaussian filtering\
 		- *root*: root file path\
 		- *alsoSave*: separate folder to save new csvs to, if wanted\
-		- *bagRoot*: root path to bagfiles folder, to save the respiration data into session folders\
+		- *bagRoot*: root path to bagfiles folder, to save the respiration data into session folders
 
 ## process_json.py
 Check the human-created label data (check for wrong orders, large gaps between labels, etc.), then add new respiration labels to individual session folders  
@@ -36,7 +36,7 @@ Check the human-created label data (check for wrong orders, large gaps between l
 	- *filepaths*: file paths for the json files you want to process\
 	- *gap*: the largest gap between human labels you will allow\
 	- *annotator*: name of human labeler\
-	- *saveRoot*: path to folder to save annotations to\
+	- *saveRoot*: path to folder to save annotations to
 
 ## downsample_data.py
 Downsamples processed data to a given Hz, 
@@ -48,7 +48,7 @@ Downsamples processed data to a given Hz,
 	- *omit*: any folders you want to omit from this processing\
 	- *root*: root file path for session folders\
 	- *saveRoot*: file path for the folder to hold the output h5 files\
-	- *hz*: hz to downsample to\
+	- *hz*: hz to downsample to
 
 
 ## make_optical_flow.py
@@ -62,7 +62,7 @@ Preprocess the RGB camera input to create optical flow images using OpenCV's imp
 	 - *root*: root file path to the session folders are located\
 	 - *hz*: downsample rate that corresponds to the folder you want to pull the data from\
 	 - *h5*: whether you want to create h5 files of the optical flow data\
-	 - *images*: whether you want to create a folder of the optical flow data\
+	 - *images*: whether you want to create a folder of the optical flow data
 
 # Modeling 
 
@@ -81,14 +81,14 @@ Also includes tensorboard logging and results tracking, including accuracy, F1 s
 	- *Setup Data Splitting*: Create PyTorch Dataloaders for train, validation, and test sets\
 	- *Training Function*: Defines what happens at each epoch of the training cycle, including evaluating the model at the end of each epoch\
 	- *Evaluation Functions*: Define how the model will be evaluated at the end of each epoch\
-	- *Training commands and Email*: Main call to training function, set up to email upon training completion\
+	- *Training commands and Email*: Main call to training function, set up to email upon training completion
 
 ## dataset.py
 
 Custom dataset definitions to handle the OMMDB custom dataset
 
 - *VideoIndex_Stacked*: An indexing system to link an optical flow frame to an index. \
-- *OF_Dataset_sequenced_sliding*: The dataset class definition that utilizes a sliding window approach to extract datapoints from the data stream. \
+- *OF_Dataset_sequenced_sliding*: The dataset class definition that utilizes a sliding window approach to extract datapoints from the data stream. 
 
 ## models.py
 
@@ -99,7 +99,7 @@ Definitions of all models tested for the project.
 	- *Full Model IMU*: The entire model, but with only the IMU MLP. Therefore, it includes the chosen CNN, the IMU MLP, and the LSTM\
 	- *CNN simple*: A simple CNN\
 	- *CNN 2*: A simple CNN, but with Batch Normalization and lazy linear fully connected layers\
-	- *IMU Net*: A simple MLP that increases the dimensionality of the raw IMU inputs\
+	- *IMU Net*: A simple MLP that increases the dimensionality of the raw IMU inputs
 
 ## normalize_optical_flow.py
 
