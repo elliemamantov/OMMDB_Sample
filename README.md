@@ -68,7 +68,7 @@ Preprocess the RGB camera input to create optical flow images using OpenCV's imp
 
 ## model_training.py
 
-Script to train models according to many possible arguments, such as learning rate, number of convolutional features, dropout and regularization, and which local gpus to run on. Please see script for list of arguments. \
+Script to train models according to many possible arguments, such as learning rate, number of convolutional features, dropout and regularization, and which local gpus to run on. Please see script for list of arguments. 
 
 Also includes tensorboard logging and results tracking, including accuracy, F1 score, and confusion matrices
 
