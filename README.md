@@ -72,7 +72,7 @@ Script to train models according to many possible arguments, such as learning ra
 
 Also includes tensorboard logging and results tracking, including accuracy, F1 score, and confusion matrices
 
-**Regions**:
+**Regions**:\
 	- *Libraries*: Import all libraries necessary\
 	- *Args parsing and variables setup*: parse command line arguments that detail what model to create and how it should be trained\
 	- *Setup GPU*: Setup the use of local GPUs\
